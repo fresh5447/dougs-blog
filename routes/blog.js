@@ -55,22 +55,24 @@ router.route('/')
             if (err)
                 res.send(err);
 
-            res.json(blog);
+            res.send(blog);
         });
     })
 
     // update the bear with this id (accessed at PUT http://localhost:8080/api/bears/:id)
     .put(function(req, res) {
+    console.log(req.params.title + "-----------------------------------------------------------------REQUEST");
+
         mongoose.model('Blog').findById({
-            _id: req.params.id,
-            title: req.params.title,
-            body: req.params.body
+            _id: req.params.id
         }, function(err, blog) {
+          blog.title = req.body.title;
+          blog.body = req.body.body;
             if (err)
                 res.send(err);
 
-            res.json(blog);
-            res.send("blog was updated")
+            blog.save();
+            res.json(blog)
         });
     })
     // delete the bear with this id (accessed at DELETE http://localhost:8080/api/blogs/:id)
