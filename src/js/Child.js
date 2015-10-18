@@ -9,3 +9,5 @@ var Child = React.createClass({
 });
  
 module.exports = Child;
+
+// http://tylermcginnis.com/reactjs-tutorial-pt-2-building-react-applications-with-gulp-and-browserify/#comment-13809

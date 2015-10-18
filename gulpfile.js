@@ -14,7 +14,7 @@ var path = {
   DEST: 'public',
   DEST_BUILD: 'public/build',
   DEST_SRC: 'public/js',
-  ENTRY_POINT: './public/js/App.js'
+  ENTRY_POINT: './src/js/App.js'
 };
  
 gulp.task('copy', function(){

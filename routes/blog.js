@@ -32,10 +32,12 @@ router.route('/')
   .post(function(req, res){
     var title = req.body.title;
     var body = req.body.body;
+    var author = "Douglas Walter";
 
     mongoose.model('Blog').create({
       title: title,
-      body: body
+      body: body,
+      author: author
     }, function(err, blog){
       if(err){
         res.send("houston we have a problem")
