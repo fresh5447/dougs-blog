@@ -5,18 +5,15 @@ var fs = require('fs');
 var bodyParser = require('body-parser');
 var db = require('./model/db');
 var blogModel = require('./model/blog');
-
-
+var blogRoutes = require('./routes/blog');
 
 var app = express();
 
 app.set('port', (process.env.PORT || 3000));
 
-var blogRoutes = require('./routes/blog');
-
 app.use(express.static('public'));
 
-app.use('/api/blogs', blogRoutes)
+app.use('/api/blogs', blogRoutes);
 
 app.get('/', function(req, res){
 	res.readFile('index.html')

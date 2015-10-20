@@ -33,6 +33,7 @@ router.route('/')
     var title = req.body.title;
     var body = req.body.body;
     var author = "Douglas Walter";
+    var img = req.body.image;
 
     mongoose.model('Blog').create({
       title: title,
