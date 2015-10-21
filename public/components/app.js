@@ -48,14 +48,11 @@ var BlogBox = React.createClass({
     this.loadBlogsFromServer();
   },
 
-  
 
     render: function() {
         return (
         <div>
-            <ul>
-              <BlogList data={this.state.data}/>
-            </ul>
+            <BlogList data={this.state.data}/>
         </div>
           );
     }
