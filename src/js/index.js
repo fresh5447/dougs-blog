@@ -8,6 +8,7 @@ var createBrowserHistory = require("history/lib/createBrowserHistory");
 var App=require('./App');
 var Blog = require('../components/Blog')
 var Post = require("../components/BlogForm")
+var Home = require("../components/Home")
 var Route = Router.Route;
 var Link = Router.Link;
 var IndexRoute = Router.IndexRoute;
@@ -19,6 +20,7 @@ ReactDOM.render((
 	<Route path='/' component={App}>
 		<Route path='blog' component={Blog}/>
 		<Route path='post' component={Post}/>
+		<Route path='home' component={Home}/>
 		<IndexRoute component={Blog}/>
 	</Route>
 	</Router>

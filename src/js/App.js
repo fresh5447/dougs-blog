@@ -13,6 +13,7 @@ var  App = React.createClass({
 						<ul> 
 								<Link to="/blog">Blog</Link>
 								<Link to="/post">Add a new post</Link>
+								<Link to="/home"> Home Page </Link>
 						</ul>
 									{this.props.children}
 						</div>
