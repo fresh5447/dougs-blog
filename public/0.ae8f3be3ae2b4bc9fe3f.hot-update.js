@@ -1,0 +1,10 @@
+webpackHotUpdate(0,{
+
+/***/ 61:
+/***/ function(module, exports, __webpack_require__) {
+
+	eval("'use strict';\n\nvar React = __webpack_require__(62);\nvar ReactDOM = __webpack_require__(263);\nvar Router = __webpack_require__(218);\n\nvar App = __webpack_require__(260);\nvar Blog = __webpack_require__(261);\nvar Post = __webpack_require__(262);\nvar Route = Router.Route;\nvar Link = Router.Link;\nRouter = Router.Router;\n\nReactDOM.render(React.createElement(\n\tRouter,\n\tnull,\n\tReact.createElement(\n\t\tRoute,\n\t\t{ path: '/', component: App },\n\t\tReact.createElement(Route, { path: 'blog', component: Blog }),\n\t\tReact.createElement(Route, { path: 'post', component: Post })\n\t)\n), document.getElementById('root'));//@ sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiNjEuanMiLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vLi9zcmMvanMvaW5kZXguanM/YmM2NiJdLCJzb3VyY2VzQ29udGVudCI6WyJ2YXIgUmVhY3QgPXJlcXVpcmUoJ3JlYWN0Jyk7XG52YXIgUmVhY3RET009cmVxdWlyZSgncmVhY3QtZG9tJylcbnZhciBSb3V0ZXIgPSByZXF1aXJlKCdyZWFjdC1yb3V0ZXInKTtcblxudmFyIEFwcD1yZXF1aXJlKCcuL0FwcCcpO1xudmFyIEJsb2cgPSByZXF1aXJlKCcuLi9jb21wb25lbnRzL0Jsb2cnKVxudmFyIFBvc3QgPSByZXF1aXJlKFwiLi4vY29tcG9uZW50cy9CbG9nRm9ybVwiKVxudmFyIFJvdXRlID0gUm91dGVyLlJvdXRlO1xudmFyIExpbmsgPSBSb3V0ZXIuTGluaztcblJvdXRlciA9IFJvdXRlci5Sb3V0ZXI7XG5cblxuUmVhY3RET00ucmVuZGVyKChcbjxSb3V0ZXI+XG5cdDxSb3V0ZSBwYXRoPScvJyBjb21wb25lbnQ9e0FwcH0+XG5cdFx0PFJvdXRlIHBhdGg9J2Jsb2cnIGNvbXBvbmVudD17QmxvZ30vPlxuXHRcdDxSb3V0ZSBwYXRoPSdwb3N0JyBjb21wb25lbnQ9e1Bvc3R9Lz5cblx0PC9Sb3V0ZT5cblx0PC9Sb3V0ZXI+XG5cblx0KSwgZG9jdW1lbnQuZ2V0RWxlbWVudEJ5SWQoJ3Jvb3QnKSlcblxuXG4vKiogV0VCUEFDSyBGT09URVIgKipcbiAqKiAuL3NyYy9qcy9pbmRleC5qc1xuICoqLyJdLCJtYXBwaW5ncyI6Ijs7QUFBQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBRUE7QUFDQTs7QUFDQTtBQUFBO0FBQUE7QUFDQTtBQUNBO0FBQ0E7Iiwic291cmNlUm9vdCI6IiJ9");
+
+/***/ }
+
+})
