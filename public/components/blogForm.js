@@ -13,9 +13,10 @@ var BlogForm = React.createClass({
         url: this.props.url,
         dataType: 'json',
         data: data,
-        tyep: 'POST',
-            success: function(data){
-            console.log("posting data!" + data)
+        type:'POST',
+            success: function(response){
+            console.log("posting data!",data, response)
+            document.location='/blog.html'
             }.bind(this),
             error: function(xhr, status, err){
                 console.log("not posting data!")

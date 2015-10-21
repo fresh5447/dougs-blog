@@ -30,10 +30,10 @@ router.route('/')
   })
 
   .post(function(req, res){
+    console.log(req.body);
     var title = req.body.title;
     var body = req.body.body;
-    var author = "Douglas Walter";
-    var img = req.body.image;
+    var author = req.body.author;
 
     mongoose.model('Blog').create({
       title: title,
