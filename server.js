@@ -11,9 +11,9 @@ var cookieParser = require('cookie-parser');
 var session = require('express-session');
 
 
-var db = require('./app/model/db');
+var db = require('./model/db');
 
-var blogModel = require('./app/model/blog');
+var blogModel = require('./model/blog');
 var blogRoutes = require('./routes/blog');
 
 
@@ -39,7 +39,7 @@ app.use('/api/blogs', blogRoutes);
 
 
 
-require('./app/routes.js')(app, passport);
+require('./routes/userRoutes')(app, passport);
 
 app.get('/', function(req, res){
 	res.readFile('index.html')

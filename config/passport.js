@@ -1,11 +1,7 @@
-// load all the things we need
 var LocalStrategy    = require('passport-local').Strategy;
 
 // load up the user model
-var User       = require('../app/model/user');
-
-// load the auth variables
-
+var User       = require('../model/user');
 
 module.exports = function(passport) {
 
@@ -135,7 +131,5 @@ module.exports = function(passport) {
         });
 
     }));
-
-
 
 };
