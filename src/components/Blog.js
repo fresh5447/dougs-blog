@@ -5,10 +5,10 @@ var BlogList = React.createClass({
       
       var blogData = this.props.data.map(function(blog){
         return (
-                <div className="well blog-post">
-                    <h3><a href="post.html">{blog.title}</a></h3>
+                <div key={blog.id} className="well blog-post">
+                    <h3 >{blog.title}</h3>
                     <p className="post-info"><i className="glyphicon glyphicon-time"></i> Posted by John Doe on August 21st, 2014 at 10:00 PM</p>
-                    <img src="img/blog1.jpg" className="img-responsive"/>
+                    <img src="../img/blog1.jpg" className="img-responsive"/>
                     <p>{blog.body}</p>
                 </div>
         	)

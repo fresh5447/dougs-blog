@@ -1,6 +1,7 @@
 var React =require('react');
 var ReactDOM=require('react-dom')
 var Router = require('react-router');
+var style = require('../css/style.css')
 
 var createBrowserHistory = require("history/lib/createBrowserHistory");
 
@@ -9,6 +10,7 @@ var App=require('./App');
 var Blog = require('../components/Blog')
 var Post = require("../components/BlogForm")
 var Home = require("../components/Home")
+var LogIn = require("../components/LogIn")
 var Route = Router.Route;
 var Link = Router.Link;
 var IndexRoute = Router.IndexRoute;
@@ -21,6 +23,7 @@ ReactDOM.render((
 		<Route path='blog' component={Blog}/>
 		<Route path='post' component={Post}/>
 		<Route path='home' component={Home}/>
+		<Route path='login' component={LogIn}/>
 		<IndexRoute component={Blog}/>
 	</Route>
 	</Router>
