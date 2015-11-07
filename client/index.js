@@ -8,6 +8,8 @@ var AboutMe = require('./AboutMe');
 var SearchBlog = require('./SearchBlog');
 var BlogCategories = require('./BlogCategories');
 var TweetsWidget = require('./TweetsWidget');
+var LogIn = require('./LogIn');
+var SignUp = require('./SignUp');
 
 
 React.render(<TweetsWidget/>, document.getElementById('TweetsWidget'));
@@ -17,4 +19,6 @@ React.render(<SearchBlog/>, document.getElementById('SearchBlog'));
 React.render(<AboutMe/>, document.getElementById('AboutMe'));
 React.render(<BlogForm url="/api/blogs"/>, document.getElementById('BlogForm'));
 React.render(<NavBar/>, document.getElementById("NavBarrr"));
-React.render(<BlogBox url="/api/blogs"/>, document.getElementById('BlogList'));
+React.render(<BlogBox url="/api/blogs"/>, document.getElementById('BlogBox'));
+React.render(<LogIn />, document.getElementById('LogIn'));
+React.render(<SignUp />, document.getElementById('SignUp'));
