@@ -16,7 +16,7 @@ var BlogForm = React.createClass({
         type: 'POST',
             success: function(data){
             console.log("posting data!" + data)
-            document.location('blog.html')
+            document.location = 'blog.html';
             }.bind(this),
             error: function(xhr, status, err){
                 console.log("not posting data!")

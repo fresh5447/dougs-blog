@@ -9,7 +9,7 @@ var BlogList = React.createClass({
                     <img src="img/blog1.jpg" className="img-responsive"/>
                     <p>{blog.body}</p>
                 </div>
-        	)
+        	);
       });
 
         return (

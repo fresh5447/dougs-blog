@@ -14,6 +14,21 @@ module.exports = function(app, passport) {
         });
     });
 
+        // All Blogs SECTION =========================
+    app.get('/blog', function(req, res) {
+        res.render('blogs.ejs');
+    });
+
+            // New Blog Post SECTION =========================
+    app.get('/post', function(req, res) {
+        res.render('postBlog.ejs');
+    });
+
+            // New Blog Post SECTION =========================
+    app.get('/about', function(req, res) {
+        res.render('about.ejs');
+    });
+
     // LOGOUT ==============================
     app.get('/logout', function(req, res) {
         req.logout();
@@ -28,7 +43,7 @@ module.exports = function(app, passport) {
     });
 
     app.post('/login', passport.authenticate('local-login', {
-        successRedirect : '/profile', // redirect to the secure profile section
+        successRedirect : '/blog', // redirect to the secure profile section
         failureRedirect : '/login', // redirect back to the signup page if there is an error
         failureFlash : true // allow flash messages
     }));

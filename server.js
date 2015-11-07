@@ -21,7 +21,7 @@ var app = express();
 
 require('./config/passport')(passport);
 
-app.use(express.static('public'));
+// app.use(express.static('public'));
 //required for passport
 app.use(session({ secret: 'ilovescotchscotchyscotchscotch' }));
 app.use(passport.initialize());
@@ -34,16 +34,13 @@ app.use(morgan('dev'));
 app.use(cookieParser());
 app.use(bodyParser.urlencoded({ extended: true }))
 app.set('view engine', 'ejs');
+app.use(express.static('public'));
 
 app.use('/api/blogs', blogRoutes);
 
 
 
 require('./routes/userRoutes')(app, passport);
-
-app.get('/', function(req, res){
-	res.readFile('index.html')
-});
 
 
 app.listen(app.get('port'), function() {
