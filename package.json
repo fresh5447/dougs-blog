@@ -5,6 +5,17 @@
   "main": "server.js",
   "author": "",
   "license": "ISC",
+    "repository": {
+    "type": "git",
+    "url": "https://github.com/fresh5447/dougs-blog"
+  },
+  "scripts": {
+    "clean": "rimraf static",
+    "build:webpack": "NODE_ENV=production webpack --config webpack.config.prod.js",
+    "build": "npm run clean && npm run build:webpack",
+    "start": "node server.js",
+    "lint": "eslint client server || true"
+  },
   "dependencies": {
     "bcrypt-nodejs": "0.0.3",
     "body-parser": "^1.14.1",
@@ -14,10 +25,6 @@
     "ejs": "^2.3.4",
     "express": "^4.13.3",
     "express-session": "^1.11.3",
-    "gulp": "^3.9.0",
-    "gulp-html-replace": "^1.5.4",
-    "gulp-streamify": "^1.0.2",
-    "gulp-uglify": "^1.4.2",
     "method-override": "^2.3.5",
     "mongo": "^0.1.0",
     "mongoose": "^4.1.11",
@@ -25,8 +32,26 @@
     "passport": "^0.3.0",
     "passport-local": "^1.0.0",
     "react-dom": "^0.14.0",
+    "react": "^0.13.0",
+    "superagent": "^1.4.0",
     "reactify": "^1.1.1",
     "vinyl-source-stream": "^1.1.0",
     "watchify": "^3.4.0"
+  },
+    "devDependencies": {
+    "babel-core": "^5.4.7",
+    "babel-eslint": "^3.1.9",
+    "babel-loader": "^5.1.2",
+    "babel-plugin-react-transform": "^1.1.1",
+    "chokidar": "^1.2.0",
+    "eslint": "^1.3.1",
+    "eslint-plugin-react": "^2.3.0",
+    "react-transform-catch-errors": "^1.0.0",
+    "react-transform-hmr": "^1.0.0",
+    "redbox-react": "^1.0.1",
+    "rimraf": "^2.4.3",
+    "webpack": "^1.9.6",
+    "webpack-dev-middleware": "^1.2.0",
+    "webpack-hot-middleware": "^2.0.0"
   }
 }
