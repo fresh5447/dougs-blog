@@ -61,4 +61,4 @@ var BlogBox = React.createClass({
     }
 });
 
-module.exports = BlogBox
+module.exports = BlogBox;
