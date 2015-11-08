@@ -9,6 +9,7 @@ var blogRoutes = require('./routes/blog');
 var morgan = require('morgan');
 var passport = require('passport');
 var flash = require('connect-flash');
+var twitterRoutes = require('./routes/tweets');
 
 var morgan       = require('morgan');
 var cookieParser = require('cookie-parser');
@@ -73,6 +74,7 @@ require('./config/passport')(passport);
 require('./routes.js')(app, passport);
 
 app.use('/api/blogs', blogRoutes);
+app.use('/api/tweets', twitterRoutes);
 
 app.get('/', function(req, res){
 	res.readFile('index.html')

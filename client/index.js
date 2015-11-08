@@ -7,12 +7,12 @@ var BlogCarousel = require('./BlogCarousel');
 var AboutMe = require('./AboutMe');
 var SearchBlog = require('./SearchBlog');
 var BlogCategories = require('./BlogCategories');
-var TweetsWidget = require('./TweetsWidget');
+var TweetBox = require('./TweetsWidget');
 var LogIn = require('./LogIn');
 var SignUp = require('./SignUp');
 
 
-React.render(<TweetsWidget/>, document.getElementById('TweetsWidget'));
+React.render(<TweetBox/>, document.getElementById('TweetsWidget'));
 React.render(<BlogCarousel/>, document.getElementById('BlogCarousel'));
 React.render(<BlogCategories/>, document.getElementById('BlogCategories'));
 React.render(<SearchBlog/>, document.getElementById('SearchBlog'));
