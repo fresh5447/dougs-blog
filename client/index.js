@@ -10,9 +10,11 @@ var BlogCategories = require('./BlogCategories');
 var TweetBox = require('./TweetsWidget');
 var LogIn = require('./LogIn');
 var SignUp = require('./SignUp');
+var GitHubBox = require('./GitHubWidget');
 
 
 React.render(<TweetBox/>, document.getElementById('TweetsWidget'));
+React.render(<GitHubBox/>, document.getElementById('GitHubWidget'));
 React.render(<BlogCarousel/>, document.getElementById('BlogCarousel'));
 React.render(<BlogCategories/>, document.getElementById('BlogCategories'));
 React.render(<SearchBlog/>, document.getElementById('SearchBlog'));
